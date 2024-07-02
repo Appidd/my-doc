@@ -12,8 +12,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+		"@ant-design/icons-vue": "6.1.0",
+		"ant-design-vue": "^3.2.20",
+		"dayjs": "^1.11.10",
+		"store": "^2.0.12",
+		"vue": "^3.3.7"
+	},
   "devDependencies": {
     "vitepress": "^1.2.3",
-    "vue": "^3.4.31"
+    "vue": "^3.4.31",
+    "@mdit-vue/plugin-toc": "^2.0.0",
+		"@types/node": "^20.8.6",
+		"chalk": "^5.3.0",
+		"less": "^4.2.0",
+		"vitepress-theme-demoblock": "^3.0.7"
   }
 }

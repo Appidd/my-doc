@@ -1,0 +1,110 @@
+// @import './custom.less';
+
+:root {
+	--headerHeight: 64px;
+	--sidebarWidth: 190px;
+	--borderColor: #f0f0f0;
+	--activeColor: #1969f1;
+	--fontColor: #595959;
+	--fontActiveColor: #262626;
+
+	--vp-c-text-dark-1: rgba(255, 255, 245, 0.86);
+	--vp-c-text-dark-2: rgba(235, 235, 245, 0.6);
+
+	--vp-c-divider: #e2e2e3;
+
+	--vp-code-tab-bg: #292b30;
+	--vp-code-block-divider-color: #000000;
+	--vp-code-tab-active-text-color: var(--vp-c-text-dark-1);
+	--vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
+	--vp-code-tab-text-color: var(--vp-c-text-dark-2);
+	--vp-code-tab-divider: #000;
+	--vp-c-code-dimm: rgba(235, 235, 245, 0.38);
+	--vp-code-line-number-color: var(--vp-c-code-dimm);
+	--vp-code-tab-divider: var(--vp-code-block-divider-color);
+
+	--vp-c-text-code: #476582;
+	--vp-c-mute: #eeeef0;
+}
+
+.dark {
+	--vp-c-divider: rgba(82, 82, 89, 0.32);
+	--vp-c-text-code: #c9def1;
+	--vp-c-mute: #323238;
+}
+
+:root:not(.dark) .vp-adaptive-theme {
+	--vp-code-block-bg: #292b30;
+}
+
+body {
+	color: var(--vp-c-text-1);
+	background: var(--vp-c-bg);
+}
+
+// 自定义
+.vpLayout {
+	.markdownContent .demoblock-op-btns {
+		justify-content: center;
+	}
+	.VPNav {
+		z-index: 9900;
+		height: var(--headerHeight);
+		border-bottom: 1px solid var(--vp-c-divider);
+		background: var(--vp-nav-bg-color);
+
+		.VPNavBar {
+			&.has-sidebar {
+				.title {
+					width: var(--sidebarWidth);
+					padding: 0;
+				}
+				.content {
+					padding-left: var(--sidebarWidth);
+					.curtain {
+						&::before {
+							content: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container {
+		.VPNavBarTitle {
+			&.has-sidebar {
+				.title {
+					padding-left: 20px;
+					border: none;
+					.VPImage.logo {
+						margin-top: -6px;
+					}
+				}
+			}
+		}
+	}
+
+	.vp-has-aside {
+		.VPDocFooter {
+			margin-right: var(--customAsideWidth);
+		}
+	}
+}
+
+.VPLocalSearchBox {
+	z-index: 9900 !important;
+}
+
+// 防止 business-ui 等全局样式污染文档库基本样式
+.markdownContent > div {
+	& > blockquote, & > dd, & > dl, & > figure, & > h1, & > h2, & > h3, & > h4, & > h5, & > h6, & > hr, & > p, & > pre {
+		margin: revert;
+	}
+	& > div, & > p {
+		& > a:not([class]):not([style]) {
+			color: var(--vp-c-brand-2);
+			&:active { color: var(--vp-c-brand-1); }
+			&:hover { color: var(--vp-c-brand-3); }
+		}
+	}
+}
