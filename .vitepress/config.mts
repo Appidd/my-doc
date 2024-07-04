@@ -24,9 +24,9 @@ export default defineConfig({
         activeMatch: 'base-components'
       },
       {
-        text: '学习笔记',
-        link: '/business-components/getting-started',
-        activeMatch: 'business-components'
+        text: '知识库',
+        link: '/knowledge-base/getting-started',
+        activeMatch: 'knowledge-base'
       },
       {
         text: '问题记录',
@@ -115,28 +115,34 @@ export default defineConfig({
           ]
         }
       ],
-      '/business-components/': [
+      '/knowledge-base/': [
         {
-          text: '组件总览',
+          text: '总览',
           items: [
-            { text: '更新日志', link: '/business-components/CHANGELOG' },
-            { text: '快速上手', link: '/business-components/getting-started' },
+            { text: '更新日志', link: '/knowledge-base/CHANGELOG' },
+            { text: '必知必会JavaScript', link: '/knowledge-base/getting-started' },
+            { text: '进阶掌握TypeScript', link: '/knowledge-base/typescript-upgrade' },
             {
-              text: '通用',
+              text: '前端架构Architecture',
               items: [
-                { text: '商户图标', link: '/business-components/base/business-icon' },
-                { text: '图标', link: '/business-components/base/crab-icon' }
+                { text: '软件的抽象', link: '/knowledge-base/architecture/architecture-absolute' },
+                { text: 'JavaScript 设计模式', link: '/knowledge-base/architecture/architecture-design' }
               ]
             },
-            {
-              text: '操作',
-              items: [{ text: '操作日志', link: '/business-components/operate/log' }]
+            { text: '由浅入深HTML&CSS', 
+              items:[
+                { text: 'CSS选择器', link: '/knowledge-base/html-css/priority-misunderstanding' },
+                { text: '前端历史', link: '/knowledge-base/html-css/front-end-home' },
+                { text: '滚动条控制规范', link: '/knowledge-base/html-css/scrollbar' },
+                { text: 'css动画', link: '/knowledge-base/html-css/css' },
+              ]
+              
             },
             {
               text: '展示',
               items: [
-                { text: '合规卡片', link: '/business-components/display/mode-card' },
-                { text: '气泡提示', link: '/business-components/display/biz-tooltips' }
+                { text: '合规卡片', link: '/knowledge-base/display/mode-card' },
+                { text: '气泡提示', link: '/knowledge-base/display/biz-tooltips' }
               ]
             }
           ]

@@ -1,6 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
+home: true
 
 hero:
   name: 个人文档库
