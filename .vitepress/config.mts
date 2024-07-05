@@ -139,10 +139,10 @@ export default defineConfig({
               
             },
             {
-              text: '展示',
+              text: '工程化Engineering',
               items: [
-                { text: '合规卡片', link: '/knowledge-base/display/mode-card' },
-                { text: '气泡提示', link: '/knowledge-base/display/biz-tooltips' }
+                { text: '如何画好一张架构图', link: '/knowledge-base/engineering/front-picture' },
+                { text: 'NPM包的创建', link: '/knowledge-base/engineering/npm' }
               ]
             }
           ]
