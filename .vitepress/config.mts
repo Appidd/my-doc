@@ -20,8 +20,8 @@ export default defineConfig({
       { text: '指南', link: '/guide/getting-started', activeMatch: 'guide' },
       {
         text: '个人简历',
-        link: '/base-components/getting-started',
-        activeMatch: 'base-components'
+        link: '/personal-resume/resume',
+        activeMatch: 'personal-resume'
       },
       {
         text: '知识库',
@@ -29,9 +29,9 @@ export default defineConfig({
         activeMatch: 'knowledge-base'
       },
       {
-        text: '问题记录',
-        link: '/common/http-client/getting-started',
-        activeMatch: 'common'
+        text: '常见问题',
+        link: '/problem-solving/interview',
+        activeMatch: 'problem-solving'
       },
       {
         text: '其他',
@@ -46,72 +46,12 @@ export default defineConfig({
           items: [{ text: '快速上手', link: '/guide/getting-started' }]
         }
       ],
-      '/base-components/': [
+      '/problem-solving/': [
         {
-          text: '组件总览',
+          text: '总览',
           items: [
-            { text: '更新日志', link: '/base-components/CHANGELOG' },
-            { text: '快速上手', link: '/base-components/getting-started' },
-            {
-              text: '通用',
-              items: [{ text: '按钮', link: '/base-components/button' }]
-            },
-            {
-              text: '选择',
-              items: [
-                { text: '菜单', link: '/base-components/menu' },
-                { text: '下拉菜单', link: '/base-components/dropdown/dropdown' },
-                { text: '选择器', link: '/base-components/dropdown/select' },
-                { text: '日期选择器', link: '/base-components/dropdown/date-picker' },
-                { text: '时间选择器', link: '/base-components/dropdown/time-picker' },
-                { text: '级联选择器', link: '/base-components/dropdown/cascader' }
-              ]
-            },
-            {
-              text: '输入',
-              base: '/base-components/input/',
-              items: [
-                { text: '输入框', link: 'input' },
-                { text: '搜索框', link: 'search' },
-                { text: '密码框', link: 'password' },
-                { text: '文本域', link: 'textarea' },
-                { text: '自动完成', link: 'auto-complete' },
-                { text: '数字输入框', link: 'input-number' }
-              ]
-            },
-            {
-              text: '容器',
-              items: [
-                { text: '模态框', link: '/base-components/modal' },
-                { text: '抽屉', link: '/base-components/drawer' },
-                { text: '表格', link: '/base-components/table' },
-                { text: '分页', link: '/base-components/pagination' },
-                { text: '索引列表', link: '/base-components/index-list' },
-                { text: '描述列表', link: '/base-components/description' },
-                { text: 'Flex布局', link: '/base-components/flex' }
-              ]
-            },
-            {
-              text: '提示',
-              base: '/base-components/tips/',
-              items: [
-                { text: '汇总', link: 'index' },
-                { text: '省略内容提示', link: 'title' },
-                { text: '功能性提示', link: 'tooltip' },
-                { text: '展示性气泡', link: 'popover' },
-                { text: '操作性气泡', link: 'popconfirm' },
-                { text: '警告提示', link: 'alert' },
-                { text: '消息提示', link: 'message' },
-                { text: '通知提醒', link: 'notification' }
-              ]
-            },
-            {
-              text: '工具',
-              items: [
-                { text: '弹层', link: '/base-components/popup' },
-                { text: '渲染器', link: '/base-components/vnode' }
-              ]
-            }
+            { text: '前端面试题', link: '/problem-solving/interview' },
+           
           ]
         }
       ],
@@ -148,86 +88,13 @@ export default defineConfig({
           ]
         }
       ],
-      '/common/': [
+      '/personal-resume/': [
         {
-          base: '/common',
-          text: '通用包',
+          text: '总览',
           items: [
-            {
-              text: 'http-client',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/http-client/getting-started' },
-                { text: '更新日志', link: '/http-client/CHANGELOG' }
-              ]
-            },
-            {
-              text: 'directives',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/directives/getting-started' },
-                { text: '更新日志', link: '/directives/CHANGELOG' }
-              ]
-            },
-            {
-              text: 'hooks',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/hooks/getting-started' },
-                { text: '更新日志', link: '/hooks/CHANGELOG' }
-              ]
-            },
-            {
-              text: 'style',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/style/getting-started' },
-                { text: '更新日志', link: '/style/CHANGELOG' }
-              ]
-            },
-            {
-              text: 'utils',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/utils/getting-started' },
-                { text: '常量', link: '/utils/constants' },
-                { text: '枚举', link: '/utils/enums' },
-                { text: '类型', link: '/utils/types' },
-                { text: '更新日志', link: '/utils/CHANGELOG' }
-              ]
-            },
-            {
-              text: 'pro-core',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/pro-core/getting-started' },
-                { text: '更新日志', link: '/pro-core/CHANGELOG' }
-              ]
-            },
-            {
-              text: 'eslint-config-prettier',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/eslint-config-prettier/getting-started' },
-                { text: '更新日志', link: '/eslint-config-prettier/CHANGELOG' }
-              ]
-            },
-            {
-              text: 'eslint-config-vue',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/eslint-config-vue/getting-started' },
-                { text: '更新日志', link: '/eslint-config-vue/CHANGELOG' }
-              ]
-            },
-            {
-              text: 'base-data',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/base-data/getting-started' }
-                // { text: '更新日志', link: '/base-data/CHANGELOG' }
-              ]
-            }
+            { text: '个人简介', link: '/personal-resume/resume' },
+            { text: '项目经历', link: '/personal-resume/project' },
+            { text: '兴趣爱好', link: '/personal-resume/hobby' }
           ]
         }
       ],
