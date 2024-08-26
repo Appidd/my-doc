@@ -23,7 +23,7 @@ npm init
 ```
 ### 如何判断包名是否可使用？
 可在官网[npm | Home](https://www.npmjs.com/)输入你想取的包名进行搜索，如果能搜索到完全匹配的包，说明这个包名已经被使用，请更换，如果执意不更换包名，那么在上传时会报错。
-![image.png](../../static/image-npm/npm-title.png)
+![image.png](/image-npm/npm-title.png)
 PS：在npm init阶段，项目名可以任意编辑，后续直接在package.json的name字段更改包名即可
 
 ## 编辑内容
@@ -63,7 +63,7 @@ npm publish
 ```
 ### 检查npm包是否上传成功
 进入npm官网[npm | Home](https://www.npmjs.com/)，直接搜索你自己的npm包名，如果能搜索到，那么就是上传成功了。
-![image.png](../../static/image-npm/npm-success.png)
+![image.png](/image-npm/npm-success.png)
 
 ## 上传私有包
 ``` javascript
@@ -94,6 +94,6 @@ npm version major // 更新主版本
 npm publish
 ```
 版本更新后，需要重新上传到npm，直接运行npm publish，你的npm包会自动迭代
-![image.png](../../static/image-npm/npm.png)
+![image.png](/image-npm/npm.png)
 # 使用
 和其他npm包 使用方法一样，在需要的项目中通过npm i下载依赖，并使用import导入。

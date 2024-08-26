@@ -55,15 +55,14 @@ A picture is worth a thousand words （一图胜千言）。
 - 采用同层级的颜色：具有和谐感的颜色组合（在多色场景下，采用同层级的颜色更具和谐）。
 
 
-
-![](../../static//image-front-picture/front-one.png)
+![](//image-front-picture/front-one.png)
 
 ### 美感：黄金分割构图法。
 
 - 黄金分割：0.618（图的整体大小采用长1.618宽1的黄金比）；
 - 婓波那契数列：1，1，2，3，5，8，13，21，34，55，89……，当趋向于无穷大时，前一项与后一项的比值越来越逼近黄金分割0.618。
 
-![](../../static//image-front-picture/front-two.png)
+![](//image-front-picture/front-two.png)
 ### 完整感：以终为始的设计
 
 - 思考先行：以终为始的设计。
@@ -92,7 +91,7 @@ A picture is worth a thousand words （一图胜千言）。
 
 
 
-![](../../static/image-front-picture/front-three.png)
+![](/image-front-picture/front-three.png)
 
 - 业务架构图：业务规划、业务模块、业务流程等。
 - 应用架构：微服务拆分的应用和层次划分。
@@ -118,7 +117,7 @@ A picture is worth a thousand words （一图胜千言）。
 
 来自于《Thinking in UML》：
 
-![](../../static//image-front-picture/front-four.png)
+![](//image-front-picture/front-four.png)
 
 ### **架构图核心要素：分层、分模块、分功能**
 
@@ -160,13 +159,13 @@ A picture is worth a thousand words （一图胜千言）。
 **可以参考 **E-R 图也称实体-联系图
 **方框：**一般表示**实体功能**，可以用来表达层次。
 **圆角方框 ：**一般是加工处理、应用服务、**流程规范的模块。**
-![](../../static/image-front-picture/front-five.png)
+![](/image-front-picture/front-five.png)
 
 
 **圆形：**一般表示连接点。
 **椭圆形：**表示一种状态或者一种活动过程。  也可以表示模块或者实体的属性。
 
-![](../../static/image-front-picture/front-six.png)
+![](/image-front-picture/front-six.png)
 
 **虚线和实线、箭头：**一般实线框表示的关系强烈程度高于虚线框，虚线框更重于逻辑上的关联。线条或箭头可以被理解为数据流（比如从系统 A 到系统 B 的数据流）或元素间的关系（比如组件 A 依赖组件 B）。
 
@@ -177,7 +176,7 @@ A picture is worth a thousand words （一图胜千言）。
 **颜色什么意思？**
 一个使用了多种颜色的架构图却没有适当的文档说明很容易引起误解（比如为什么有些方框是绿色的，而其他是红色的？为什么有些线条是黑色的，而有些是蓝色的？）。颜色在架构图里的作用不是非常大，添加太多的颜色并不会给架构图带来更多有价值的信息。一个仅仅使用了黑白两色的架构图也应该是不言自明的，除非非常有必要使用特定的颜色来强调图中的某些部分。在任何情况下都要保持颜色的简单性，如果一定要用多种颜色，不要忘了添加说明。
 
-![](../../static//image-front-picture/front-seven.png)
+![](//image-front-picture/front-seven.png)
 
 ## 业务 / 产品架构图
 业务架构是从业务、产品视角，描述整个平台、或某个产品的实现。包括业务规划，业务模块、业务流程，对整个系统的业务进行拆分，对领域模型进行设计，把现实的业务转化成抽象对象。
@@ -220,9 +219,9 @@ A picture is worth a thousand words （一图胜千言）。
 
 以下是一些产品架构图的示例：
 
-![](../../static//image-front-picture/goods-one.png)
-![](../../static//image-front-picture/goods-two.png)
-![](../../static//image-front-picture/goods-three.png)
+![](//image-front-picture/goods-one.png)
+![](//image-front-picture/goods-two.png)
+![](//image-front-picture/goods-three.png)
 ### 业务流程图
 
 业务流程图又称为泳道图，就是描述哪些个体在什么条件下做了什么事情，他们之间有何关联。主要分三个方面：
@@ -233,15 +232,15 @@ A picture is worth a thousand words （一图胜千言）。
 
 流程图键的示例，其中包含图表中使用的一些常见符号：
 
-![](../../static//image-front-picture//business-one.png)
-![](../../static//image-front-picture//business-two.png)
+![](//image-front-picture//business-one.png)
+![](//image-front-picture//business-two.png)
 
 
 ### 任务 / 功能流程图
 
 泳道图一般是从战略上分析整个业务流程，让你对公司所做的业务有个大概的了解，而任务流程图就是在你的产品操作上，用户通过什么样的操作来完成它的目标，比如你去银行 ATM 机器上取钱，你是如何一步步操作把钱取出来的：
 
-![](../../static/image-front-picture/feature-one.png)
+![](/image-front-picture/feature-one.png)
 
 ### 画图技巧
 
@@ -297,9 +296,9 @@ A picture is worth a thousand words （一图胜千言）。
 
 如果系统比较复杂，包含的应用可能有几百上千个，如果把所有的应用都在一张图里面展示出来，信息太多太密，可能会导致架构图都看不清。这种情况下，应用架构一般都是按照子域来画应用架构图。
 
-![](../../static//image-front-picture/apply-one.png)
-![](../../static//image-front-picture/apply-two.png)
-![](../../static//image-front-picture/apply-three.png)
+![](//image-front-picture/apply-one.png)
+![](//image-front-picture/apply-two.png)
+![](//image-front-picture/apply-three.png)
 
 
 ### 单个应用技术架构图
@@ -307,13 +306,13 @@ A picture is worth a thousand words （一图胜千言）。
 
 所以应用技术架构更多是应用实现技术层面的内容，而不是去关心应用实现用的底层 IT 基础设施资源。在应用技术架构里面一般不会涉及到底层具体的资源或平台，如果应用技术架构在底层增加了类似 IT 基础设施，存储等内容，就显得不伦不类了。
 
-![](../../static/image-front-picture/apply-four.png)
+![](/image-front-picture/apply-four.png)
 ### 时序图，也成为顺序图，序列图
 
 
 描述应用程序模块之间的每一步调用过程。有时候某个业务功能的流程会比较复杂，涉及到多种角色或者模块，这时就可以使用时序图来梳理这个业务逻辑。这样会使业务看起来非常清晰，代码写起来也是水到渠成的事情了。
 
-![](../../static/image-front-picture/apply-five.png)
+![](/image-front-picture/apply-five.png)
 
 ## 技术架构图
 技术架构：确定组成应用系统的实际运行组件（lvs，nginx，tomcat，php-fpm 等），这些运行组件之间的关系，以及部署到硬件的策略。突出技术实现，重点描述系统的关键技术组件，例如分层、核心技术组件、上下游通信方式、数据流向等。
@@ -353,22 +352,22 @@ A picture is worth a thousand words （一图胜千言）。
 
 参考的技术架构图：（图的通讯层最好是叫接入层），这是典型技术架构图（主要关注技术组件），每个层涉及到技术的点都罗列出来：
 
-![](../../static/image-front-picture/technology-one.png)
+![](/image-front-picture/technology-one.png)
 
 其他摘录网上相关的图：
 
-![](../../static/image-front-picture/technology-two.png)
-![](../../static/image-front-picture/technology-three.png)
-![](../../static/image-front-picture/technology-four.png)
-![](../../static/image-front-picture/technology-five.png)
+![](/image-front-picture/technology-two.png)
+![](/image-front-picture/technology-three.png)
+![](/image-front-picture/technology-four.png)
+![](/image-front-picture/technology-five.png)
 ## 代码架构图
 代码分层，让不同层次的代码做不同的动作。层次清晰的代码，提高可读性，从代码结构就大概能了解到代码是如何分层，每层大概功能是什么。例如常用的 Controller、Service、Mapper/Dao 三层代码结构，其各层的代码逻辑范围。
 
-![](../../static/image-front-picture/code-one.png)
+![](/image-front-picture/code-one.png)
 
 代码架构图也涉及到 uml 图：
 
-![](../../static/image-front-picture/code-two.png)
+![](/image-front-picture/code-two.png)
 ## 数据架构图
 
 
@@ -376,7 +375,7 @@ A picture is worth a thousand words （一图胜千言）。
 
 其设计原则和应用架构设计大同小异，在设计时需要考虑系统的业务场景，需要根据不同的业务场景对数据进行异构设计、数据库读写分离、分布式数据存储策略等。如图是电商系统中数据架构的一个概要。
 
-![](../../static/image-front-picture/data-one.png)
+![](/image-front-picture/data-one.png)
 
 数据架构的设计原则参考如下：
 （1）统一数据视图，即保证数据的及时性、一致性、准确性和完整性。
@@ -398,4 +397,4 @@ A picture is worth a thousand words （一图胜千言）。
 （6）采用关系数据库。除成本因素外，MySQL 的数据库扩展性和高并发支持能力较强，也比较容易招聘到相关的研发人员和运维人员。
 （7）合理利用 NoSQL 数据库。在数据库有能力支撑时，尽量不要引入缓存。另外，要合理利用缓存做容灾。
 
-![](../../static/image-front-picture/data-two.png)
+![](/image-front-picture/data-two.png)

@@ -71,8 +71,9 @@ export default defineConfig({
             },
             { text: '由浅入深HTML&CSS', 
               items:[
-                { text: 'CSS选择器', link: '/knowledge-base/html-css/priority-misunderstanding' },
                 { text: '前端历史', link: '/knowledge-base/html-css/front-end-home' },
+                { text: 'HTML核心', link: '/knowledge-base/html-css/html' },
+                { text: 'CSS选择器', link: '/knowledge-base/html-css/priority-misunderstanding' },
                 { text: '滚动条控制规范', link: '/knowledge-base/html-css/scrollbar' },
                 { text: 'css动画', link: '/knowledge-base/html-css/css' },
               ]
@@ -143,18 +144,8 @@ export default defineConfig({
     },
     socialLinks: [
       {
-        icon: {
-          svg: `<svg width="24" height="24" class="tanuki-logo" viewBox="0 0 36 36">
-							<path class="tanuki-shape tanuki-left-ear" fill="#e24329" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"></path>
-							<path class="tanuki-shape tanuki-right-ear" fill="#e24329" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"></path>
-							<path class="tanuki-shape tanuki-nose" fill="#e24329" d="M18,34.38 3,14 33,14 Z"></path>
-							<path class="tanuki-shape tanuki-left-eye" fill="#fc6d26" d="M18,34.38 11.38,14 2,14 6,25Z"></path>
-							<path class="tanuki-shape tanuki-right-eye" fill="#fc6d26" d="M18,34.38 24.62,14 34,14 30,25Z"></path>
-							<path class="tanuki-shape tanuki-left-cheek" fill="#fca326" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"></path>
-							<path class="tanuki-shape tanuki-right-cheek" fill="#fca326" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"></path>
-						</svg>`
-        },
-        link: 'http://git.medcrab.com/saas-html/medcrab-business-ui'
+        icon: 'github',
+        link: 'https://github.com/Appidd'
       }
     ],
     search: {
@@ -168,7 +159,13 @@ export default defineConfig({
       next: '下一页'
     },
     footer: {
-      message: `Copyright © 1996-${year} Cordial999 版权所有 Zhangbin.liu `
+      message: `<div style="display: flex;justify-content: center;align-items: center;">
+<a href="https://beian.miit.gov.cn/" target="_blank">备案号：蜀ICP备2024085068号-1</a>
+<div style="display: flex;align-items: center;margin-left: 20px;">
+<img src="/icon/record.png" alt="license" style="width: 20px;height: 20px;margin-right: 10px;">
+<a href="https://beian.mps.gov.cn/#/query/webSearch?code=51011202000847" rel="noreferrer" target="_blank">川公网安备51011202000847号</a>
+</div>
+</div>`
     }
   },
   markdown: {
