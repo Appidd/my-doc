@@ -25,7 +25,7 @@ export default defineConfig({
       },
       {
         text: '知识库',
-        link: '/knowledge-base/getting-started',
+        link: '/knowledge-base/fullstack-roadmap',
         activeMatch: 'knowledge-base'
       },
       {
@@ -60,6 +60,7 @@ export default defineConfig({
           text: '总览',
           items: [
             { text: '更新日志', link: '/knowledge-base/CHANGELOG' },
+            { text: '全栈开发学习路线', link: '/knowledge-base/fullstack-roadmap' },
             { text: '必知必会JavaScript', link: '/knowledge-base/getting-started' },
             { text: '进阶掌握TypeScript', link: '/knowledge-base/typescript-upgrade' },
             {
@@ -84,6 +85,22 @@ export default defineConfig({
               items: [
                 { text: '如何画好一张架构图', link: '/knowledge-base/engineering/front-picture' },
                 { text: 'NPM包的创建', link: '/knowledge-base/engineering/npm' }
+              ]
+            },
+            {
+              text: '后端与全栈工程',
+              items: [
+                { text: 'Java 与 Spring Boot', link: '/knowledge-base/backend/java-spring' },
+                { text: 'Python 与 FastAPI', link: '/knowledge-base/backend/python-fastapi' },
+                { text: '数据库与 SQL 设计', link: '/knowledge-base/backend/database' },
+                { text: '接口设计与工程化', link: '/knowledge-base/backend/api-engineering' },
+                { text: '部署、Nginx 与 Docker', link: '/knowledge-base/backend/devops' }
+              ]
+            },
+            {
+              text: 'AI 应用开发',
+              items: [
+                { text: 'AI 应用开发与业务落地', link: '/knowledge-base/ai/ai-application' }
               ]
             }
           ]
@@ -160,7 +177,7 @@ export default defineConfig({
     },
     footer: {
       message: `<div style="display: flex;justify-content: center;align-items: center;">
-<a href="https://beian.miit.gov.cn/" target="_blank">备案号：蜀ICP备2024085068号-1</a>
+<a href="https://beian.miit.gov.cn/" target="_blank">备案号：蜀ICP备2024102306号-2</a>
 <div style="display: flex;align-items: center;margin-left: 20px;">
 <img src="/icon/record.png" alt="license" style="width: 20px;height: 20px;margin-right: 10px;">
 <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51011202000847" rel="noreferrer" target="_blank">川公网安备51011202000847号</a>
@@ -226,8 +243,8 @@ export default defineConfig({
       }
     },
     server: {
-      host: '0.0.0.0',
-      port: 80,
+      host: '127.0.0.1',
+      port: 5173,
       proxy: {
         '/api': {
           // target: 'http://devsaas.medcrab.com',
